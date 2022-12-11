@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timer</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1 class="hd">Timer</h1>
+    <fieldset>
+        <legend>&nbsp;Schulaufgabe (45 Min.) / Ex (20 Min.) / Benutzerdefiniert&nbsp;</legend>
+        <input type="radio" id="SA" value="SA" name="EX/SA/udef"> <label for="SA">Schulaufgabe</label>
+        <input type="radio" id="EX" value="EX" name="EX/SA/udef"> <label for="EX">Stegreifaufgabe</label>
+        <input type="radio" id="userdef" value="userdef" name="EX/SA/udef"> <label for="userdef">Benutzerdefiniert</label>
+        <input type="text" id="udefm" name="EX/SA/udef" placeholder="Minuten">
+        <input type="text" id="udefs" name="EX/SA/udef" placeholder="Sekunden">
+    </fieldset><br>
+    <button id="selButton" class="button">Ausw&auml;hlen</button>&nbsp;&nbsp;
+    <button id="startButton" class="button">Start</button>
+    <div class="time">
+        <a id="mins">00</a>:<a id="secs">00</a>
+    </div>
+    <div class="time">
+        <p id="info"></p>
+    </div>
+</body>
+</html>
